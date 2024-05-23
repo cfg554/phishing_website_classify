@@ -9,7 +9,7 @@ https://archive.ics.uci.edu/dataset/379/website+phishing
 * random_forest
 * MLP
 * SVM
-* XGBOOST
+* XGBOOST <br>
 同时使用了shell脚本文件运行，方便自主选择模型和参数
 
 ### 运行步骤(为了防止冲突，请自己创建全新的虚拟环境，python环境为3.9)
@@ -21,6 +21,7 @@ step2:
 step3:
     ./run.sh
 
+<br>
 非常简单易用，欢迎star🥰
 （work.ipynb为分解的详细步骤）
     
