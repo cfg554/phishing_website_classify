@@ -2,15 +2,15 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 
 
-def acc_score(X_train, X_test, y_train, y_test, model):
+def acc_score(X_train, X_test, y_train, y_test, model, model_name):
     y_test_model = model.predict(X_test)
     y_train_model = model.predict(X_train)
 
     acc_train_model = accuracy_score(y_train, y_train_model)
     acc_test_model = accuracy_score(y_test, y_test_model)
     
-    print("Decision Tree: Accuracy on training Data: {:.3f}".format(acc_train_model))
-    print("Decision Tree: Accuracy on test Data: {:.3f}".format(acc_test_model))
+    print("{}: Accuracy on training Data: {:.3f}".format(model_name, acc_train_model))
+    print("{}: Accuracy on test Data: {:.3f}".format(model_name, acc_test_model))
 
     return 
 

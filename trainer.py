@@ -74,7 +74,7 @@ def main():
     if args.arch == 'XGBOOST':
         myutils.acc_score4xgb(X_train, X_test, y_train, y_test, my_model)
     else:
-        myutils.acc_score(X_train, X_test, y_train, y_test, my_model)
+        myutils.acc_score(X_train, X_test, y_train, y_test, my_model, args.arch)
 
     #保存模型
     myutils.save_model(my_model, args.save_dir)
